@@ -1,0 +1,19 @@
+{
+  "name": "unit-parse",
+  "version": "1.0.0",
+  "description": "Parse numbers and units from css values.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "unit",
+    "parse",
+    "css"
+  ],
+  "author": "Jelle Spekken",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^22.4.3"
+  }
+}
