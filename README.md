@@ -1,7 +1,7 @@
 # Unit Parse 
 
 ```js
-const parseUnit = require('./index');
+const parseUnit = require('unit-parse');
 
 console.log(parseUnit('20px'));
 // { value: '20', unit: 'px' }
