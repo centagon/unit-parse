@@ -2,11 +2,18 @@
 
 [![Build Status](https://travis-ci.org/centagon/unit-parse.svg?branch=master)](https://travis-ci.org/centagon/unit-parse)
 
+Given an value, `unit-parse` will be able to parse the following units:
+- rem, em, %, px
+- vh, vw, vmin, vmax
+- cm, mm, in, pt, pc, ch, ex
+- s
+
 ```js
 const parseUnit = require('unit-parse');
 
-console.log(parseUnit('20px'));
-// { value: '20', unit: 'px' }
+console.log(parseUnit('20px')); // { value: '20', unit: 'px' }
+console.log(parseUnit('15%')); // { value: '15', unit: '%' }
+console.log(parseUnit('-1.5s')); // { value: '-1.5', unit: 's' }
 ```
 
 ## Contributing
