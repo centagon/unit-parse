@@ -19,6 +19,20 @@ units.forEach((unit) => {
     });
 });
 
+test('can convert negative values', () => {
+    expect(parseUnit(`-15%`)).toEqual({
+        value: -15,
+        unit: '%',
+    });
+});
+
+test('can convert values with decimal point', () => {
+    expect(parseUnit(`0.5s`)).toEqual({
+        value: 0.5,
+        unit: 's',
+    });
+});
+
 test('cannot convert unknown units', () => {
     const unit = parseUnit('20m');
 
