@@ -11,9 +11,13 @@ Given an value, `unit-parse` will be able to parse the following units:
 ```js
 const parseUnit = require('unit-parse');
 
-console.log(parseUnit('20px')); // { value: '20', unit: 'px' }
-console.log(parseUnit('15%')); // { value: '15', unit: '%' }
-console.log(parseUnit('-1.5s')); // { value: '-1.5', unit: 's' }
+parseUnit('20px'); // { value: '20', unit: 'px' }
+parseUnit('15%'); // { value: '15', unit: '%' }
+parseUnit('-1.5s'); // { value: '-1.5', unit: 's' }
+
+parseUnit('20px', true); // 'px'
+parseUnit('15%', true); // '%'
+parseUnit('-1.5s', true); // 's'
 ```
 
 ## Contributing

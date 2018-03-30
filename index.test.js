@@ -35,6 +35,14 @@ test('can convert values with decimal point', () => {
     });
 });
 
+test('can return only the unit', () => {
+    expect(parseUnit('19rem', true)).toBe('rem');
+});
+
+test('returns undefined when asking for a value without a unit', () => {
+    expect(parseUnit('50', true)).toBe(undefined);
+});
+
 test('cannot convert unknown units', () => {
     const unit = parseUnit('20m');
 
