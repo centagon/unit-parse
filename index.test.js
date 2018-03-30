@@ -1,3 +1,5 @@
+/* global test, expect */
+
 const parseUnit = require('./index');
 
 // https://www.w3schools.com/cssref/css_units.asp
