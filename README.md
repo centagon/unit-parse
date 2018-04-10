@@ -1,5 +1,6 @@
 # Unit Parse 
 
+[![NPM Version](https://badge.fury.io/js/unit-parse.svg)](https://badge.fury.io/js/unit-parse)
 [![Build Status](https://travis-ci.org/centagon/unit-parse.svg?branch=master)](https://travis-ci.org/centagon/unit-parse)
 
 Given an value, `unit-parse` will be able to parse the following units:
